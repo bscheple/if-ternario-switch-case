@@ -9,11 +9,18 @@
     //Apresente a situação final do aluno
 
     //ENTRADA
-
-
+    const primeiro = Number(prompt("Informe a nota do primeiro trimestre:"));
+    const segundo = Number(prompt("Informe a nota do segundo trimestre:"));
+    const terceiro = Number(prompt("Informe a nota do terceiro trimestre:"));
+    
     //PROCESSAMENTO
-
-
+    const media = (primeiro + segundo + terceiro) / 3;
+    let resultado;
+    (media <= 4) ? resultado = " Está REPROVADO"
+    : (media < 6) ? resultado = "Está em EXAME"
+    : resultado = "Está APROVADO";
+     
     //SAÍDA
+    document.write(resultado);
 
 </script>

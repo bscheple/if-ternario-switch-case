@@ -11,11 +11,21 @@
     //Calcule os pontos e apresente o nível de complexidade do programa
 
     //ENTRADA
-
-
+const linhas = Number(prompt("Insira quantas linhas o programa possui:"));
+const ifelse = Number(prompt("Insira a quantidade de if-else que o programa possui:"));
+const ternario = Number(prompt("informe a quantidade de if-ternario que foi ultilizado neste programa:"));
+let saida
     //PROCESSAMENTO
+const linha = linhas * 1;
+const elseif = ifelse *2;
+const ternarios = ternario *3;
 
+const totalPontos = linha + elseif + ternarios;
+
+(totalPontos <= 25) ? saida = "Você é considerado CALOURO!"
+: saida = "Você é considerado VETERANO!";
 
     //SAÍDA
 
+document.write(saida)
 </script>

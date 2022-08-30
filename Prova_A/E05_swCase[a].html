@@ -10,11 +10,26 @@
     //Calcule e apresente o preço final da venda de acordo com o Tipo do Cliente
 
     //ENTRADA
-
-
+const venda = Number(prompt("Informe o valor da venda que foi feita:"))
+const cliente = (prompt("Informe o tipo do cliente caso seja Cliente Comum (Comum), Cliente Vip (VIP) e Funcionario."))
+let saida
     //PROCESSAMENTO
 
+    switch (cliente) {
+        case "Comum":
+            saida = ""
+            break;
+        case "":
+            saida = ""
+            break;
+        case "":
+            saida = ""
+            break;
+        default:
+            saida = "Opção invalida"
+            break;
+    }
 
     //SAÍDA
-
+document.write(saida)
 </script>
